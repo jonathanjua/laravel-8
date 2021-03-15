@@ -4,5 +4,6 @@
 @foreach ($posts as $item)
   {{ $item->title }} <br>
   {{ $item->content }}<br>
+  <a href="{{ route('posts.show',['id' =>$item->id])}}">Ver</a>
 <hr>
 @endforeach
